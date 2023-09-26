@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: hsl(240, 6%, 21%);
+  --text-color: hsl(240, 40%, 98%);
+  --card-color: hsl(240, 9%, 89%);
+  --card-icon-color: hsl(240, 6%, 21%);
+  --primary-color: hsl(194, 97%, 31%);
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+html.light {
+  --bg-color: hsl(240, 40%, 98%);
+  --text-color: hsl(240, 6%, 21%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#btn-toggle-mode {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+  color: var(--text-color);
+  transition: color .3s;
+}
+
+#btn-toggle-mode:hover {
+  color: var(--primary-color);
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  appearance: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 5.6rem;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+
+  width: 100%;
+  max-width: 82rem;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 32rem;
+}
+
+#display {
+  display: flex;
+
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12rem;
+  font-weight: 500;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem;
+  margin-top: 1.6rem;
+}
+
+.ph-play-circle,
+.ph-pause-circle {
+  color: var(--primary-color);
+}
+
+#sounds-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+
+  max-width: 33.6rem;
+}
+
+.sounds-buttons button {
+  background-color: var(--card-color);
+  padding: 4.8rem 4.1rem;
+  border-radius: 2.4rem;
+  font-size: 5.6rem;
+  color: var(--card-icon-color);
+  transition: all .3s;
+}
+
+.sounds-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.woods .ph-tree,
+.rain .ph-cloud-rain,
+.coffee-shop .ph-storefront,
+.fireplace .ph-fire {
+  background-color: var(--primary-color);
+  color: var(--card-color);
+}
+
+/* Controls */
+
+.running .ph-play-circle {
+  display: none;
+}
+
+html:not(.running) .ph-pause-circle {
+  display: none;
+}
+
+/* Responsivo */
+
+@media (max-width: 900px) {
+  #app {
+    flex-direction: column;
+    gap: 9.8rem;
+  }
+}

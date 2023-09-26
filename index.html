@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="sound-off">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>FocusTimer</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn-toggle-mode">
+        <span  class="sr-only" >Ativar light mode.</span>
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
+      </button>
+
+      <section id="timer">
+        <div id="display">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+
+        <div id="controls">          
+          <button data-action="toggleRunning" class="ph-bold ph-play-circle">
+            <span class="sr-only">Iniciar contador</span>
+          </button>
+          <button data-action="toggleRunning" class="ph-bold ph-pause-circle">
+            <span class="sr-only">Pausar contador</span>
+          </button>
+          <button data-action="reset" class="ph-bold ph-stop-circle">
+            <span class="sr-only">Parar contador</span>
+          </button>
+          <button data-action="increase" class="ph-bold ph-plus-circle">
+            <span class="sr-only">Incrementar em 5 minutos</span>
+          </button>
+          <button data-action="decrease" class="ph-bold ph-minus-circle">
+            <span class="sr-only">Decrementar em 5 minutos</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="sounds-buttons" class="sounds-buttons">
+        <button data-action="woods" class="ph-bold ph-tree">
+          <span class="sr-only">Tocar som de floresta</span>
+        </button>
+        <button data-action="rain" class="ph-bold ph-cloud-rain">
+          <span class="sr-only">Tocar som de chuva</span>
+        </button>
+        <button data-action="coffee-shop" class="ph-bold ph-storefront">
+          <span class="sr-only">Tocar som de cafeteria</span>
+        </button>
+        <button data-action="fireplace" class="ph-bold ph-fire">
+          <span class="sr-only">Tocar som de lareira</span>
+        </button>
+      </section>
+  </body>
+</html>
