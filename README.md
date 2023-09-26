@@ -10,8 +10,6 @@
 
 ## 🔨 **Fucionalidades**
 
----
-
 - Modo claro e modo escuro;
 
 - Contador regressivo de até 25 minutos;
@@ -23,8 +21,6 @@
 </br>
 
 ## 📝 **Conceitos trabalhados**
-
----
 
 **HTML e CSS**
 
