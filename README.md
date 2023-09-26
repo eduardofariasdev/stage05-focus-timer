@@ -32,7 +32,7 @@
 - Resposividade;
 - Posicionamento, alinhamento e estilização dos elementos;
 
-**Java Script**
+**JavaScript**
 
 - Minupulação da DOM;
 - Funções callback;
@@ -40,7 +40,7 @@
 
 </br>
 
-### 👉🏽 Clique **[aqui](https://eduardofariasdev.github.io/stage05-fortune-cookie/)** e abra esse projeto no seu seu navegador.
+### 👉🏽 Clique **[aqui](https://eduardofariasdev.github.io/stage05-focus-timer/)** e abra esse projeto no seu seu navegador.
 
 </br>
 
